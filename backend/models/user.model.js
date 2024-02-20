@@ -21,7 +21,7 @@ const userSchema = mongoose.Schema(
       ref: "Contestant",
       default: null,
     },
-    userRole: {
+    userType: {
       enum: ["USER", "ADMIN"],
       default: "USER",
     },
