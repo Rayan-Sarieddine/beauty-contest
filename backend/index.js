@@ -11,6 +11,7 @@ const path = require("path");
 app.use(express.static(path.join(__dirname, "public")));
 
 const cors = require("cors");
+
 app.use(cors({ origin: "*" }));
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -19,6 +20,8 @@ app.use((req, res, next) => {
   next();
 });
 
+const { connectToMongoDB } = require("./configs/mongoDB.configs");
 app.listen(8000, () => {
   console.log("live");
+  connectToMongoDB();
 });
