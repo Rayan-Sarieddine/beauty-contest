@@ -20,6 +20,10 @@ app.use((req, res, next) => {
   next();
 });
 
+//Auth Routes
+const authRoutes = require("./routes/auth.routes");
+app.use("/auth", authRoutes);
+
 const { connectToMongoDB } = require("./configs/mongoDB.configs");
 app.listen(8000, () => {
   console.log("live");
