@@ -1,0 +1,18 @@
+:root {
+  --primary: #018ae0;
+  --primary-tint: #1a96e3;
+  --primary-shade: #016eb3;
+  --secondary: #e12d5a;
+  --secondary-tint: #e4426b;
+  --secondary-shade: #cb2951;
+  --black: #212529;
+  --gery: #495057;
+  --grey-tint: #868e96;
+  --grey-shade: #343a40;
+  --green: #54cd38;
+  --orange: #ff9933;
+  --purple: #940c69;
+  --yellow: #fae053;
+  --red: #e32121;
+  --white: #f2f2f2;
+}
