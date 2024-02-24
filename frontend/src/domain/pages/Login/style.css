@@ -1,0 +1,129 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.login-form-box {
+  position: relative;
+  width: 40rem;
+  height: 45rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-box h2 {
+  font-size: 3rem;
+  color: #000;
+  text-align: center;
+}
+
+.login-inputbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 5rem;
+  width: 31rem;
+  border-bottom: 2px solid #000;
+}
+
+.login-inputbox label {
+  position: absolute;
+  top: -2rem;
+  left: 0.5rem;
+  color: #000;
+  font-size: 1.7rem;
+  pointer-events: none;
+}
+
+.login-inputbox input {
+  width: 100%;
+  height: 3rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  padding: 0 3.5rem 0 0.5rem;
+  color: #000;
+}
+
+.login-inputbox ion-icon {
+  position: absolute;
+  right: 0.8rem;
+  color: #000;
+  font-size: 1.2rem;
+  top: 2rem;
+}
+
+.login-forget {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 0 1.5rem;
+  font-size: 1.3rem;
+}
+
+.login-forget label button {
+  color: #007bff;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.login-btn {
+  width: 100%;
+  height: 4rem;
+  border-radius: 40px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.login-register {
+  font-size: 1.5rem;
+  color: #000;
+  text-align: center;
+  margin: 2.5rem 0 1rem;
+}
+
+.login-register p button {
+  color: #007bff;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.login-toggle-password {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  .login-form-box {
+    padding: 0rem 5rem;
+  }
+
+  .login-forget label {
+    margin: 0.5rem 0;
+  }
+
+  .login-btn {
+    font-size: 1.5rem;
+  }
+}
