@@ -102,6 +102,7 @@ const SignUp = () => {
                 <div className="input-container">
                   {" "}
                   <input
+                    id="full-name"
                     type="text"
                     required
                     onChange={(e) => {
@@ -109,7 +110,7 @@ const SignUp = () => {
                       validateFullName(e.target.value);
                     }}
                   />
-                  <label>Full Name</label>
+                  <label htmlFor="full-name">Full Name</label>
                   <NameIcon />
                 </div>
                 {fullNameError && <p className="error">{fullNameError}</p>}{" "}
@@ -118,6 +119,7 @@ const SignUp = () => {
                 <div className="input-container">
                   {" "}
                   <input
+                    id="email"
                     type="email"
                     required
                     onChange={(e) => {
@@ -125,7 +127,7 @@ const SignUp = () => {
                       validateEmail(e.target.value);
                     }}
                   />
-                  <label>Email</label>
+                  <label htmlFor="email">Email</label>
                   <EmailIcon />
                 </div>
                 {emailError && <p className="error">{emailError}</p>}{" "}
@@ -134,6 +136,7 @@ const SignUp = () => {
                 <div className="input-container">
                   {" "}
                   <input
+                    id="password"
                     type={showPassword ? "password" : "text"}
                     required
                     onChange={(e) => {
@@ -142,7 +145,7 @@ const SignUp = () => {
                     }}
                     className="signup-password-input"
                   />
-                  <label>Password</label>
+                  <label htmlFor="password">Password</label>
                   <button
                     className="signup-toggle-password"
                     onClick={togglePasswordVisibility}
@@ -161,6 +164,7 @@ const SignUp = () => {
                 <div className="input-container">
                   {" "}
                   <input
+                    id="confirm-password"
                     type={showPassword ? "password" : "text"}
                     required
                     onChange={(e) => {
@@ -169,7 +173,7 @@ const SignUp = () => {
                     }}
                     className="signup-password-input"
                   />
-                  <label>Confirm Password</label>
+                  <label htmlFor="confirm-password">Confirm Password</label>
                   <button
                     className="signup-toggle-password"
                     onClick={togglePasswordVisibility}

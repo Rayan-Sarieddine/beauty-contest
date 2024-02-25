@@ -49,11 +49,12 @@ const ForgetPassword = () => {
               <h2>Forget Password</h2>
               <div className="forget-inputbox">
                 <input
+                  id="email"
                   type="email"
                   required
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <label>Enter Email</label>
+                <label htmlFor="email">Enter Email</label>
                 <EmailIcon />
               </div>
 

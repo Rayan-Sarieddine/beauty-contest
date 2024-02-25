@@ -77,21 +77,23 @@ const Login = () => {
             <h2>Login</h2>
             <div className="login-inputbox">
               <input
+                id="email"
                 type="email"
                 required
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <label>Email</label>
+              <label htmlFor="email">Email</label>
               <EmailIcon />
             </div>
             <div className="login-inputbox">
               <input
+                id="password"
                 type={showPassword ? "password" : "text"}
                 required
                 onChange={(e) => setPassword(e.target.value)}
                 className="login-password-input"
               />
-              <label>Password</label>
+              <label htmlFor="password">Password</label>
               <button
                 className="login-toggle-password"
                 onClick={togglePasswordVisibility}

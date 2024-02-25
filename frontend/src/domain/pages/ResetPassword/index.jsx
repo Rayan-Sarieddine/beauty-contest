@@ -71,6 +71,7 @@ const ResetPassword = () => {
                 <div className="input-container">
                   {" "}
                   <input
+                    id="password"
                     type={showPassword ? "password" : "text"}
                     required
                     onChange={(e) => {
@@ -79,7 +80,7 @@ const ResetPassword = () => {
                     }}
                     className="signup-password-input"
                   />
-                  <label>Password</label>
+                  <label htmlFor="password">Password</label>
                   <button
                     className="reset-toggle-password"
                     onClick={togglePasswordVisibility}
@@ -98,6 +99,7 @@ const ResetPassword = () => {
                 <div className="input-container">
                   {" "}
                   <input
+                    id="confirm-password"
                     type={showPassword ? "password" : "text"}
                     required
                     onChange={(e) => {
@@ -106,7 +108,7 @@ const ResetPassword = () => {
                     }}
                     className="reset-password-input"
                   />
-                  <label>Confirm Password</label>
+                  <label htmlFor="confirm-password">Confirm Password</label>
                   <button
                     className="reset-toggle-password"
                     onClick={togglePasswordVisibility}
