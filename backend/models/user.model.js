@@ -18,7 +18,7 @@ const userSchema = mongoose.Schema(
     },
     image: {
       type: String,
-      default: "defaultUser.png",
+      default: "default-user.png",
     },
     votedTo: {
       type: mongoose.Schema.Types.ObjectId,
