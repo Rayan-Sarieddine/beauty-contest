@@ -54,7 +54,7 @@ const ForgetPassword = () => {
                   required
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <label htmlFor="email">Enter Email</label>
+                <label htmlFor="email">Enter Your Email</label>
                 <EmailIcon />
               </div>
 
