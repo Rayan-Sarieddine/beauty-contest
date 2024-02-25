@@ -27,7 +27,7 @@ export const userSlice = createSlice({
         token,
       };
     },
-    cleanData: (state, action) => {
+    cleanData: () => {
       return { ...initialState };
     },
     updateImage: (state, { payload }) => {
